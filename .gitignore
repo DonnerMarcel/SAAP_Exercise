@@ -1,0 +1,14 @@
+# Maven or Gradle build folders
+exercise/target/
+exercise/build/
+
+# VS Code
+exercise/.vscode/
+
+# Java
+*.class
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
