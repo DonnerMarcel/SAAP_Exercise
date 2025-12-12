@@ -1,10 +1,10 @@
 package com.example.layered.service;
 
-import java.util.List;
-import java.util.Optional;
-
 import com.example.layered.model.Book;
 import com.example.layered.repository.BookRepository;
+
+import java.util.List;
+import java.util.Optional;
 
 public class BookService {
 
@@ -32,5 +32,18 @@ public class BookService {
 
     public boolean deleteBook(String id) {
         return repo.delete(id);
+    }
+
+    // new helpers for loan handling
+    public boolean isAvailable(String id) {
+        return repo.findById(id).map(b -> !b.isBorrowed()).orElse(false);
+    }
+
+    public void markBorrowed(String id) {
+        repo.findById(id).ifPresent(b -> b.setBorrowed(true));
+    }
+
+    public void markReturned(String id) {
+        repo.findById(id).ifPresent(b -> b.setBorrowed(false));
     }
 }
