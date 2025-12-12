@@ -1,6 +1,6 @@
-package com.example.library.controller;
+package com.example.layered.controller;
 
-import com.example.library.service.BookService;
+import com.example.layered.service.BookService;
 
 public class BookController {
 

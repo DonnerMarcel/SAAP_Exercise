@@ -1,4 +1,4 @@
-package com.example.library.model;
+package com.example.layered.model;
 
 public class Book {
     private String id;

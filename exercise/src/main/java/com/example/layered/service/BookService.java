@@ -1,10 +1,10 @@
-package com.example.library.service;
-
-import com.example.library.model.Book;
-import com.example.library.repository.BookRepository;
+package com.example.layered.service;
 
 import java.util.List;
 import java.util.Optional;
+
+import com.example.layered.model.Book;
+import com.example.layered.repository.BookRepository;
 
 public class BookService {
 

@@ -1,8 +1,8 @@
-package com.example.library;
+package com.example.layered;
 
-import com.example.library.controller.BookController;
-import com.example.library.repository.BookRepository;
-import com.example.library.service.BookService;
+import com.example.layered.controller.BookController;
+import com.example.layered.repository.BookRepository;
+import com.example.layered.service.BookService;
 
 public class LibraryApplication {
 
